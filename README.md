@@ -1,5 +1,5 @@
 # CitacoesAPI
-API criada para retornar citações famosas. No momento são apenas 140 citações. Mais serão adicionadas
+API criada para retornar citações famosas. No momento estão disponíveis 1035 citações.
 
 ## Implementação
 Para implementar o api ao código, basta adicionar as seguintes linhas de código:
