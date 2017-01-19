@@ -1,7 +1,7 @@
 <?php
   $json = file_get_contents("citacoes.json"); // Pega as citações do arquivo
   $decode = json_decode($json,TRUE); // decoda o arquivo em json retornando um array
-  $randId = rand(1,140); // Gera um id aleatório para selecionar uma citação, sendo 140 a quantidade de citações no arquivo citacoes.json
+  $randId = rand(1,1035); // Gera um id aleatório para selecionar uma citação, sendo 1035 a quantidade de citações no arquivo citacoes.json
   if (isset($_GET['type'])) {
     if ($_GET['type'] == "json") { // verifica se o parametro definido é igual a json
       header('Content-Type: application/json; charset=utf-8'); // Define o Content-Type para JSON
