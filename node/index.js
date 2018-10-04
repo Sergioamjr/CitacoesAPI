@@ -19,7 +19,7 @@ function returnAll(req, res) {
 function returnRandom(req, res) {
   const { citacao } = citacoesObject;
   const citacoesLength = citacao.length;
-  const randomID = Math.floor(Math.random() * citacoesLength);
+  const randomID = Math.floor(Math.random() * citacoesLength - 1) + 1;
   const randomIDToString = randomID.toString();
   const filtered = citacao.filter(({ id }) => id === randomIDToString)[0];
   res.json({ ...filtered });
@@ -30,3 +30,5 @@ server.get("/random", returnRandom);
 server.get("/:id", filterById);
 
 server.listen(3000);
+
+module.exports = server;
