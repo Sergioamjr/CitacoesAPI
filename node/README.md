@@ -4,32 +4,50 @@ API criada para retornar citações famosas. No momento estão disponíveis 1035
 
 # Stacks necessárias
 
-`Node`
+```
+Node
+```
 
 ## Implementação
 
 Baixe o projeto
-`git clone git@github.com:WillianRod/CitacoesAPI.git`
+```
+git clone git@github.com:WillianRod/CitacoesAPI.git
+```
 
 Vá atá o projeto em Node
-`cd CitacoesAPI && cd code`
+```
+cd CitacoesAPI && cd node
+```
 
 Instale as dependências
-`npm install`
+```
+npm install
+```
 
 Inicie o servidor
-`npm start`
+```
+npm start
+```
 
 Para rodar os testes unitários
-`npm test`
+```
+npm test
+```
 
 ## Endpoints
 
 Retorna todas citacoes
-`http://localhost:3000/`
+```
+http://localhost:3000/
+```
 
 Retorna uma citacao pelo id
-`http://localhost:3000/1`
+```
+http://localhost:3000/1
+```
 
 Retorna uma citacao aleatória
-`http://localhost:3000/random`
+```
+http://localhost:3000/random
+```
